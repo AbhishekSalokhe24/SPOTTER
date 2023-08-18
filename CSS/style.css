@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}  
+
+section{
+    min-height: 40vh;
+    padding: 10rem 9% 2rem;
+    
+}
+
+header{
+    top:0;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+   
+}
+.logo-img img{
+    height: 50px;
+    width: 50px;
+}
+.logo{
+   font-size: 2rem;
+    color: #132258;
+    font-weight: 700;
+    cursor: default;
+}
+.hamburger{
+    display: none;
+}
+
+.nav-bar.active{
+    height: 480px;
+}
+.nav-bar.active ul{
+    opacity: 1;
+}
+.nav-bar ul{
+    display: flex;
+
+}
+.nav-bar ul li {
+    list-style: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: #fff;
+    background-color: #003546;
+}
+
+.nav-bar ul li #sn,#lg{
+    color: #fff;
+    background-color: #0a7aeb;
+}
+.nav-bar ul li a.active{
+    color: #fff;
+    background-color: #003546;
+}
+
+
+/* --------------------------------------------------Home Section */
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 5rem 4% 0rem;
+}
+.home-txt{
+    margin: 40px ;
+}
+.home-section .home-div-img img{
+    width: 45vw;
+}
+
+.home-section .home-txt h1 {
+    font-size: 5rem;
+    color: #132258;
+    font-weight: 900;
+}
+.home-section .home-txt p {
+    font-size: 12px;
+    text-align: justify;
+    color: #003546;
+}
+
+/* ---------------------------------------------------------Information Section */
+.Information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003546;
+    padding: .9rem 5% .9rem;
+}
+.Information .info-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Information .info-div span{
+    color: #fff;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #ffd000;
+    margin-top: 1rem;
+}
+.Information .info-div h1{
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.Information .info-div p{
+    text-align: center;
+    font-size: .8rem;
+    color: #fff;
+}
+/* ---------------------------------------------------------------------Cards /latest hackathons sections */
+.latest-hack-sec{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 9% 2rem;
+    background-color: #00b7e044;
+}
+.latest-hack-sec .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: myanimation 2.5s infinite;
+    height: 5rem;
+    background-color: #132258;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+@keyframes myanimation {
+    75%{background-color:#0a7aeb;}
+  }
+.latest-hack-sec .title h1{
+    color: #fff;
+    text-align: center;
+}
+.cards{
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.cards .box-container .box img{
+    height: 80px;
+}
+.cards .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap:15px;
+}
+
+.cards .box-container .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+.cards .box-container .box p{
+    color: #333232;
+    font-size: .9rem;
+    line-height: 1.8;
+    padding-bottom: 1px;
+}
+.cards .box-container .box h2{
+    font-size: 1rem;
+    text-align:inherit;
+    color: #003546;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+.cards .box-container .box img{
+    margin: 1rem;
+}
+.cards .box-container .box .time-div {
+    height: 6rem;
+    width: 100%;
+    /* background-color: #00bcd4; */
+    padding: 4px;
+    
+}
+.cards .box-container .box .bottom-btn {
+    height: auto;
+    width: 100%;
+    /* background-color: #00bcd4; */
+}
+.cards .box-container .box .but-read{
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #003546;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    
+}
+.cards .box-container .box .but-read a{
+    color: #fff;
+}
+.cards .box-container .box .but-read:hover{
+    background-color: #00c3ff;
+}
+.cards .box-container .box .but-read a:hover{
+    color: darkblue;
+}
+
+
+
+
+
+
+
+/* ----------------------- Ratings Section -------------------------------------------  */
+
+.ratings {
+    padding: 8rem 9% 8rem;
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+      display: none;
+    }
+  }
+
+
+/* ----------------------------------------------------     Footer */
+.fotter-sec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #003546;
+}
+.fotter-sec .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.fotter-sec h3{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+.fotter-sec p{
+    text-align: center;
+    color: #fff;
+}
+.fotter-sec i{
+    font-size: 2rem;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+.fotter-sec button{
+    border-radius: 50%;
+    margin: 20px;
+}
+.fotter-sec a i{
+    color:#003546;
+    font-size:2rem;
+    padding: 1rem;
+}
